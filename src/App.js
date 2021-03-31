@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './components/navbar';
+import Title from './components/title';
+import About from './components/aboutme';
+import Footer from './components/footer';
+import Projects from './components/projects';
+import Blogs from './components/blogs';
+import Technology from'./components/technology';
+import Recc from './components/recc';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+    return( 
+    <div>
+        <Navbar/>
+        <Title name="A.Vamshi Sai" leadtext="I am a Student from India"/>
+        <Recc/>
+        <Technology/>
+       <Projects/>
+       <About/>
+        <Blogs/>
+        <Footer/>
+
     </div>
-  );
+    );
+  
 }
 
 export default App;
